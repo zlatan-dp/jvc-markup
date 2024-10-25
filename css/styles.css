@@ -12,7 +12,9 @@ body {
   color: var(--black-color);
   line-height: var(--main-lh);
   font-size: var(--main-fs);
+  font-weight: 300;
   margin: 0;
+  /* background-color: #f2f2f2; */
 }
 
 p,
@@ -33,7 +35,7 @@ ol {
 
 img {
   display: block;
-  /* width: 100%; */
+  width: 100%;
   height: auto;
 }
 
@@ -51,9 +53,10 @@ section {
 }
 
 .container {
+  position: relative;
   max-width: 1366px;
-  padding-left: 40px;
-  padding-right: 40px;
+  /* padding-left: 40px;
+  padding-right: 40px; */
   margin: 0 auto;
 }
 
@@ -62,6 +65,34 @@ section {
   height: auto;
   display: block;
   margin: 0 auto;
+}
+
+.section-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
+  background-blend-mode: multiply;
+}
+
+.info-block {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.info-block-title {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.white {
+  color: var(--white-color);
+}
+
+.bold {
+  font-weight: 600;
 }
 
 /* header */
@@ -92,3 +123,55 @@ section {
 }
 
 /* hero */
+
+/* software */
+
+.software-list {
+  position: absolute;
+  left: 15%;
+  top: 15%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  .software-list-item {
+    max-width: 387px;
+  }
+}
+
+/* technologies */
+
+.technologies {
+  .info-block {
+    max-width: 300px;
+  }
+
+  .memc {
+    position: absolute;
+    left: 2%;
+    bottom: 10%;
+    z-index: 5;
+  }
+
+  .upscaling {
+    position: absolute;
+    right: 2%;
+    top: 11%;
+    z-index: 6;
+  }
+
+  .img-wrapper {
+    position: absolute;
+    width: 22%;
+  }
+
+  .left-img {
+    left: 5%;
+    top: 11%;
+  }
+
+  .right-img {
+    right: 7%;
+    bottom: 10%;
+  }
+}

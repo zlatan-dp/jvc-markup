@@ -3,6 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -43,10 +51,64 @@
 
       <section class="software">
         <div class="container">
+          <div class="section-gradient"></div>
           <picture>
             <source media="(max-width: 560px)" srcset="./img/jvc-software-mob.png" />
             <img src="./img/jvc-software.png" alt="Опис зображення" class="responsive-img" />
           </picture>
+          <ul class="software-list list">
+            <li class="software-list-item">
+              <svg class="software-icon" width="309" height="42">
+                <use href="./img/svg/icons.svg#icon-google-logo"></use>
+              </svg>
+              <p>Керуйте пристроями за допомогою голосу, завдяки вбудованому Google Assistant</p>
+            </li>
+            <li class="software-list-item">
+              <svg class="software-icon" width="216" height="32">
+                <use href="./img/svg/icons.svg#icon-android-logo"></use>
+              </svg>
+              <p>Переглядайте тисячі фільмів, шоу та ігор завдяки Android TV</p>
+            </li>
+            <li class="software-list-item">
+              <svg class="software-icon" width="162" height="40">
+                <use href="./img/svg/icons.svg#icon-bluetooth-logo"></use>
+              </svg>
+              <p>
+                Підключайте всі свої гаджети та аксесуари до телевізора за допомогою функції
+                Bluetooth
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="technologies">
+        <div class="container">
+          <div class="section-gradient"></div>
+          <picture>
+            <source media="(max-width: 560px)" srcset="./img/jvc-technologies-mob.png" />
+            <img src="./img/jvc-technologies.png" alt="Опис зображення" class="responsive-img" />
+          </picture>
+          <div class="info-block memc white">
+            <p class="info-block-title">MEMC</p>
+            <p class="info-block-text">
+              З технологією згладжування динамічних сцен ви отримаєте чітке зображення
+              <span class="bold">без ривків та розмиття</span>
+            </p>
+          </div>
+          <div class="info-block upscaling white">
+            <p class="info-block-title">Upscaling</p>
+            <p class="info-block-text">
+              Технологія покращення зображення оптимізує фільм чи сереіал будь-якої якості до
+              ідеального
+              <span class="bold">формату 4K</span>
+            </p>
+          </div>
+          <div class="img-wrapper left-img">
+            <img src="./img/jvc-technologies-circle-1.png" alt="img" />
+          </div>
+          <div class="img-wrapper right-img">
+            <img src="./img/jvc-technologies-circle-2.png" alt="img" width="302" />
+          </div>
         </div>
       </section>
     </main>
