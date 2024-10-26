@@ -187,3 +187,15 @@ section {
     z-index: 6;
   }
 }
+
+/* uhd */
+
+.uhd {
+  .info-block {
+    max-width: 370px;
+    position: absolute;
+    right: 8%;
+    top: 10%;
+    z-index: 6;
+  }
+}
