@@ -212,3 +212,15 @@ section {
     z-index: 6;
   }
 }
+
+/* frameless */
+
+.frameless {
+  .info-block {
+    max-width: 300px;
+    position: absolute;
+    right: 7%;
+    top: 11%;
+    z-index: 6;
+  }
+}
