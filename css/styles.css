@@ -175,3 +175,15 @@ section {
     bottom: 10%;
   }
 }
+
+/* technologies */
+
+.contrast-color {
+  .info-block {
+    max-width: 370px;
+    position: absolute;
+    left: 7%;
+    top: 10%;
+    z-index: 6;
+  }
+}
