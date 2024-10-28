@@ -259,6 +259,104 @@ section {
   }
 }
 
+/* tvs */
+
+.tvs {
+  .container {
+    padding: 64px 75px;
+    display: flex;
+    gap: 32px;
+  }
+
+  .tv-card {
+    /* width: 384px; */
+    background-color: #EAE9E9;
+    border: 1px solid #EAE9E9;
+    border-radius: 8px;
+    overflow: hidden;
+
+    .tv-img-wrap {
+      background-color: #fff;
+      padding: 0 42px;
+      border-radius: 8px;
+      
+    }
+
+    .tv-info-wrap {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      .tv-name-wrap{
+        display: flex;
+        font-family: Inter;
+        justify-content: space-between;
+        
+        .tv-name-text {
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 1.4;
+          width: 170px;
+        }
+
+        .tv-name-diagonal{
+          width: 72px;
+          height: 72px;
+          border-radius: 50%;
+          background-color: #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-shrink: 0;
+          font-size: 36px;
+          font-weight: 300;
+          color: #00000080;
+
+        }
+      }
+
+      .tv-tech-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        
+        .tv-tech-item {
+          padding: 4px 8px;
+          background-color: #fff;
+          border-radius: 4px;
+          font-size: 16px;
+          font-weight: 400;
+          color: #000000BF;
+
+        }
+      }
+
+      .tv-btn-wrap {
+        padding: 24px 0;
+        display: flex;
+        justify-content: center;
+        border-top: 1px solid #0000001A;
+
+        .tv-btn {
+          
+          font-family: Inter;
+          font-size: 16px;
+          font-weight: 800;
+          letter-spacing: 0.03em;
+          text-transform: uppercase;
+          color: var(--white-color);
+          background-color: #111;
+          padding: 16px 32px;
+          margin: 0 auto;
+          border-radius: 4px;
+        }
+      }
+    }
+
+  }
+}
+
 /* footer */
 
 .footer {
