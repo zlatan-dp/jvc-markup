@@ -288,7 +288,7 @@ section {
     padding: 0 20px;
     display: flex;
     gap: 40px;
-    background-image: url(/img/jvc-history-line.png);
+    background-image: url(../img/jvc-history-line.png);
     background-repeat: no-repeat;
     background-position: 95% 0%;
     background-size: cover;
