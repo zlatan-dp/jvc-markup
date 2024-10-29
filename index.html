@@ -10,6 +10,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.3.1/swiper-bundle.min.css"
+/>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -121,7 +125,7 @@
 
       <!-- contrast-color -->
 
-      <section class="contrast-color">
+      <section class="contrast-color" id="contrast-color">
         <div class="container">
           <picture>
             <source media="(max-width: 560px)" srcset="./img/jvc-contrast-color-mob.png" />
@@ -308,67 +312,89 @@
 
       <section class="tvs" id="tvs">
         <div class="container">
-          <div class="tv-card">
-            <div class="tv-img-wrap">
-              <img src="./img/jvc-tv-1.png" alt="tv" width="300">
+          <div class="swiper-container">
+            <div class="swiper-wrapper"> 
+              <div class="swiper-slide">
+                <div class="tv-card">
+                  <div class="tv-img-wrap">
+                    <img src="./img/01_LT-32MU238.jpg" alt="tv" width="300">
+                  </div>
+                  <div class="tv-info-wrap">
+                    <div class="tv-name-wrap">
+                      <p class="tv-name-text">Телевізор JVC LT-32MU238</p>
+                      <p class="tv-name-diagonal">32″</p>
+                    </div>
+                    <ul class="tv-tech-list list">
+                      <li class="tv-tech-item">Smart TV</li>
+                      <li class="tv-tech-item">Contrast Control</li>
+                      <li class="tv-tech-item">Android TV 11</li>
+                    </ul>
+                    <div class="tv-btn-wrap">
+                      <a class="tv-btn link" href="">Детальніше</a>
+                    </div>                  
+                </div>
+               </div>
+              </div>
+              <div class="swiper-slide">
+               <div class="tv-card">
+                <div class="tv-img-wrap">
+                  <img src="./img/01_LT-43MU639.jpg" alt="tv" width="300">
+                </div>
+                <div class="tv-info-wrap">
+                  <div class="tv-name-wrap">
+                    <p class="tv-name-text">Телевізор JVC LT-43MU639</p>
+                    <p class="tv-name-diagonal">43″</p>
+                  </div>
+                  <ul class="tv-tech-list list">
+                    <li class="tv-tech-item">Smart TV</li>
+                    <li class="tv-tech-item">Contrast Control</li>
+                    <li class="tv-tech-item">Android TV 11</li>
+                  </ul>
+                  <div class="tv-btn-wrap">
+                    <a class="tv-btn link" href="">Детальніше</a>
+                  </div>                  
+              </div>
+             </div>
             </div>
-            <div class="tv-info-wrap">
-              <div class="tv-name-wrap">
-                <p class="tv-name-text">Телевізор JVC LT-32MU238</p>
-                <p class="tv-name-diagonal">32″</p>
+            <div class="swiper-slide">
+             <div class="tv-card">
+              <div class="tv-img-wrap">
+                <img src="./img/01_LT-50MU639.jpg" alt="tv" width="300">
               </div>
-              <ul class="tv-tech-list list">
-                <li class="tv-tech-item">Smart TV</li>
-                <li class="tv-tech-item">Contrast Control</li>
-                <li class="tv-tech-item">Android TV 11</li>
-              </ul>
-              <div class="tv-btn-wrap">
-                <a class="tv-btn link" href="">Детальніше</a>
-              </div>
+              <div class="tv-info-wrap">
+                <div class="tv-name-wrap">
+                  <p class="tv-name-text">Телевізор JVC LT-50MU639</p>
+                  <p class="tv-name-diagonal">50″</p>
+                </div>
+                <ul class="tv-tech-list list">
+                  <li class="tv-tech-item">Smart TV</li>
+                  <li class="tv-tech-item">Contrast Control</li>
+                  <li class="tv-tech-item">Android TV 11</li>
+                </ul>
+                <div class="tv-btn-wrap">
+                  <a class="tv-btn link" href="">Детальніше</a>
+                </div>   
+              </div>               
+            </div>
+           </div>
+          </div>
+            <div class="swiper-button-next">
+              <svg  width="24" height="24">
+                <use href="./img/svg/icons.svg#icon-icon-arrow"></use>
+              </svg>
+            </div>
+            <div class="swiper-button-prev">
+              <svg  width="24" height="24">
+                <use href="./img/svg/icons.svg#icon-icon-arrow"></use>
+              </svg>
             </div>
           </div>
 
-          <div class="tv-card">
-            <div class="tv-img-wrap">
-              <img src="./img/jvc-tv-1.png" alt="tv" width="300">
-            </div>
-            <div class="tv-info-wrap">
-              <div class="tv-name-wrap">
-                <p class="tv-name-text">Телевізор JVC LT-32MU238</p>
-                <p class="tv-name-diagonal">32″</p>
-              </div>
-              <ul class="tv-tech-list list">
-                <li class="tv-tech-item">Smart TV</li>
-                <li class="tv-tech-item">Contrast Control</li>
-                <li class="tv-tech-item">Android TV 11</li>
-              </ul>
-              <div class="tv-btn-wrap">
-                <a class="tv-btn link" href="">Детальніше</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="tv-card">
-            <div class="tv-img-wrap">
-              <img src="./img/jvc-tv-1.png" alt="tv" width="300">
-            </div>
-            <div class="tv-info-wrap">
-              <div class="tv-name-wrap">
-                <p class="tv-name-text">Телевізор JVC LT-32MU238</p>
-                <p class="tv-name-diagonal">32″</p>
-              </div>
-              <ul class="tv-tech-list list">
-                <li class="tv-tech-item">Smart TV</li>
-                <li class="tv-tech-item">Contrast Control</li>
-                <li class="tv-tech-item">Android TV 11</li>
-              </ul>
-              <div class="tv-btn-wrap">
-                <a class="tv-btn link" href="">Детальніше</a>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
+
+
+
     </main>
 
     <footer class="footer">
@@ -381,13 +407,13 @@
         </li>
           <li class="footer-list-item">
             <p class="footer-title">Продукти та сервіси</p>
-            <a class="footer-link link" href="">Телевізори</a>
+            <a class="footer-link link" href="#tvs">Телевізори</a>
           </li>
           <li class="footer-list-item">
             <p class="footer-title">Технології</p>
-            <a class="footer-link link" href="">AndroidTV</a>
-            <a class="footer-link link" href="">MEMC</a>
-            <a class="footer-link link" href="">Contrast Control</a>
+            <a class="footer-link link" href="#androidtv">AndroidTV</a>
+            <a class="footer-link link" href="#technologies">MEMC</a>
+            <a class="footer-link link" href="#contrast-color">Contrast Control</a>
           </li>
           <li class="footer-list-item">
             <p class="footer-title">Документи</p>
@@ -436,5 +462,9 @@
       </div>
       
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.3.1/swiper-bundle.min.js"></script>
+    <script src="./js/swiper-init.js"></script>
+
   </body>
 </html>
