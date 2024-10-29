@@ -7,6 +7,10 @@
   --trans-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   color: var(--black-color);
@@ -257,6 +261,99 @@ section {
       }
     }
   }
+}
+
+/* history */
+
+.history{
+
+  .history-logo-wrap {
+    position: absolute;
+    top: 7%;
+    left: 7%;
+    width: 200px;
+
+    .history-logo-text {
+      font-family: Inter;
+      font-size: 44px;
+      font-weight: 300;
+      text-align: center;
+      color: var(--white-color);
+    }
+  }
+
+  .history-info-list {
+    position: absolute;
+    top: 20%;
+    padding: 0 20px;
+    display: flex;
+    gap: 40px;
+    background-image: url(/img/jvc-history-line.png);
+    background-repeat: no-repeat;
+    background-position: 95% 0%;
+    background-size: cover;
+
+    .history-info-item {
+
+     &:nth-child(1) {
+      transform: translateY(69%);
+    }
+     &:nth-child(2) {
+      transform: translateY(56%);
+    }
+     &:nth-child(3) {
+      transform: translateY(40%);
+    }
+     &:nth-child(4) {
+      transform: translateY(21.5%);
+    }
+
+      .history-info-wrap{
+        
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+        color: var(--white-color);
+  
+        .history-info-title{
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          align-items: center;
+          font-family: Inter;
+          font-size: 21px;
+          font-weight: 600;
+          line-height: 27px;
+          text-align: center;      
+  
+          &::after {
+            content: '';
+            display: block;
+            width: 16px;
+            height: 16px;
+            background-color: #fff;
+            border-radius: 50%;
+          }
+  
+        }
+  
+        .history-img-wrap {
+          width: 53px;
+        }
+  
+        .history-info-text{
+          text-align: center;
+          &:last-child {
+            max-width: 302px;
+          }
+        }
+      }
+    }
+
+    
+  }
+
 }
 
 /* tvs */
