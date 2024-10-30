@@ -127,6 +127,16 @@ section {
   font-weight: 600;
 }
 
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.no-scroll {
+  overflow-y: hidden;
+}
+
 /* header */
 
 .header {
@@ -136,8 +146,39 @@ section {
     gap: 10px;
     align-items: center;
 
+    @media (max-width: 561px) {
+      & {
+        padding: 30px 20px 10px 20px;
+        justify-content: center;
+      }
+    }
+
+    .mob-menu-btn {
+      position: absolute;
+      left: 30px;
+      border: none;
+      background-color: var(--white-color);
+      cursor: pointer;
+
+      @media (min-width: 561px) {
+        & {
+          display: none;
+        }
+      }
+    }
+
+    .logo-wrapper {
+      min-width: 50px;
+    }
+
     .navigation {
       flex-grow: 1;
+
+      @media (max-width: 561px) {
+        & {
+          display: none;
+        }        
+      }
 
       .menu-list {
         margin: 0 auto;
@@ -152,7 +193,54 @@ section {
       }
     }
   }
+  .mob-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 222;
+    background-color: #111;
+    min-width: 300px;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 38px;
+    padding-bottom: 30px;
+    transform: scale(1);
+    transition: opacity var(--trans-dur) var(--trans-timing-function), visibility var(--trans-dur) var(--trans-timing-function), transform var(--trans-dur) var(--trans-timing-function);
+
+    .logo-wrapper {
+      width: 83px;
+      margin: 0 auto;
+      margin-bottom: 50px;
+    }
+
+    .mob-menu-close {
+      position: absolute;
+      top: 44px;
+      right: 25px;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .mob-menu-list
+    {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      align-items: center;
+      
+      a {
+        color: var(--white-color);
+        font-weight: 500;
+      }
+    }
+  }
+  
 }
+
 
 /* hero */
 

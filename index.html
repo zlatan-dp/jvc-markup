@@ -28,6 +28,11 @@
 
     <header class="header">
       <div class="container">
+        <button type="button" class="mob-menu-btn">
+          <svg class="menu-icon" width="24" height="19">
+            <use href="./img/svg/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
         <div class="logo-wrapper">
           <a href="./index.html">
             <img src="./img/svg/logo.svg" alt="logo" />
@@ -43,6 +48,29 @@
           </ul>
         </nav>
       </div>
+
+      <div class="mob-menu is-hidden">
+        <div class="mob-container">
+          <button type="button" class="mob-menu-close">
+            <svg class="mob-menu-icon" width="19" height="19">
+              <use href="./img/svg/icons.svg#icon-menu-close"></use>
+            </svg>
+          </button>
+          <div class="logo-wrapper">
+            <img src="./img/svg/jvc-footer-logo.svg" alt="logo" />
+          </div>
+          <nav class="navigation-mob">
+            <ul class="mob-menu-list list">
+              <li class="mob-menu-list-item"><a class="link" href="#tvs">Телевізори</a></li>
+              <li class="mob-menu-list-item"><a class="link" href="#androidtv">AndroidTV</a></li>
+              <li class="mob-menu-list-item"><a class="link" href="#technologies">Технології</a></li>
+              <li class="mob-menu-list-item"><a class="link" href="#history">Історія</a></li>
+              <li class="mob-menu-list-item"><a class="link" href="#support">Підтримка</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
     </header>
     <main>
 
@@ -472,6 +500,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.3.1/swiper-bundle.min.js"></script>
     <script src="./js/swiper-init.js"></script>
+    <script src="./js/mob-menu.js"></script>
 
   </body>
 </html>
