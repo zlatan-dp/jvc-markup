@@ -617,29 +617,34 @@ section {
 
     .history-info-list {
       position: absolute;
-      top: 20%;
+      top: 0;
+      height: 100%;
       padding: 0 20px;
       flex-direction: row;
       gap: 40px;
       background-color: transparent;
-      background-image: url(../img/jvc-history-line.png);
+      background-image: url(../img/svg/vector-line.svg);
       background-repeat: no-repeat;
-      background-position: 95% 0%;
+      background-position: 85% 0%;
       background-size: cover;
   
       .history-info-item {
   
        &:nth-child(1) {
-        transform: translateY(69%);
+        padding-top: 25%;
       }
        &:nth-child(2) {
-        transform: translateY(56%);
+        padding-top: 21%;
       }
        &:nth-child(3) {
-        transform: translateY(40%);
+        padding-top: 16.4%;
       }
        &:nth-child(4) {
-        transform: translateY(21.5%);
+        padding-top: 11.4%;
+      }
+  
+       &:nth-child(5) {
+        padding-top: 5.8%;
       }
   
         .history-info-wrap{   
