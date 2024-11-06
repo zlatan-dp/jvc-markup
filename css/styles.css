@@ -265,6 +265,7 @@ section {
       }
       p {
         text-align: center;
+        margin-top: 10px;
       }
     }
 
@@ -443,6 +444,8 @@ section {
       top: 13%;
       z-index: 6;
       background-color: transparent;
+      align-items: flex-start;
+
 
       .info-block-text {
         text-align: left;
@@ -514,6 +517,10 @@ section {
 
 .service {
 
+  .info-block-text {
+    text-align: center;
+  }
+
   .service-info{
     padding: 6px 51px 48px 51px;
     display: flex;
@@ -552,6 +559,10 @@ section {
   
       .info-block {
         max-width: 355px;
+
+        .info-block-text {
+          text-align: left;
+        }
       }
   
       .service-info-list {
