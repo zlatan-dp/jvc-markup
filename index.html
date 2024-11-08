@@ -460,9 +460,9 @@
           </li>
           <li class="footer-list-item">
             <p class="footer-title">Документи</p>
-            <a class="footer-link link" href="">Політика конфіденційності</a>
-            <a class="footer-link link" href="">Політика файлів cookie</a>
-            <a class="footer-link link" href="">Умови користування сайтом</a>
+            <a class="footer-link link" href="./privacy-statement.html" target="_blank">Політика конфіденційності</a>
+            <a class="footer-link link" href="./cookie-files-policy.html" target="_blank">Політика файлів cookie</a>
+            <a class="footer-link link" href="./terms-of-use.html" target="_blank">Умови користування сайтом</a>
           </li>
           <li class="footer-list-item">
             <p class="footer-title">Підтримка користувачів</p>
@@ -512,16 +512,15 @@
     <script src="./js/jquery.event.move.js"></script>
     <script src="./js/jquery.twentytwenty.js"></script>
     <script>
-        $(function() {
+      window.onload = function() {
           // Встановлення значення offset залежно від ширини екрана при завантаженні
           const offset = window.innerWidth < 561 ? 0.5 : 0.7;
 
-          // Ініціалізація twentytwenty з обраним offset
           $(".twentytwenty-container").twentytwenty({
               no_overlay: true,
               default_offset_pct: offset,
           });
-        });
+        };
     </script>
   </body>
 </html>
